@@ -1,0 +1,89 @@
+% UofM Ann Arbor Metropolis Theme
+
+% Packages
+\usepackage{caption}
+\usepackage{xcolor}
+% \usetheme[progressbar=frametitle]{metropolis}
+\usetheme{metropolis}
+% \usepackage{appendixnumberbeamer}
+
+% GT Colors
+% https://brand.gatech.edu/our-look/colors
+
+% Primary Colors
+\definecolor{techGold}{HTML}{B3A369}
+\definecolor{navyBlue}{HTML}{003057}
+\definecolor{white}{HTML}{FFFFFF}
+
+% Accessible Tech Gold
+\definecolor{techMediumGold}{HTML}{A4925A}
+\definecolor{techDarkGold}{HTML}{857437}
+
+% Secondary Colors
+\definecolor{grayMatter}{HTML}{54585A}
+\definecolor{piMile}{HTML}{D6DBD4}
+\definecolor{diploma}{HTML}{F9F6E5}
+\definecolor{buzzGold}{HTML}{EAAA00}
+
+
+% Tertiary Colors (CMYK)
+
+% Tertiary Colors (Brights)
+
+
+% UofM Ann Arbor logo on title slide
+% https://brand.umich.edu/logos/
+% \titlegraphic{\hfill\includegraphics[height=1.5cm]{U-M_Logo.png}}
+
+
+% Slide colors
+\setbeamercolor{palette primary}{fg=white, bg=navyBlue}
+\setbeamercolor{palette secondary}{fg=white, bg=techDarkGold}
+\setbeamercolor{palette tertiary}{fg=white, bg=techMediumGold}
+
+\setbeamercolor{normal text}{fg=black}
+\setbeamercolor{alerted text}{fg=techGold}
+\setbeamercolor{example text}{fg=techGold}
+\setbeamercolor{bibliography entry location}{fg=techGold, bg=techDarkGold}
+\setbeamercolor{progress bar}{fg=techGold, bg=techDarkGold}
+\setbeamercolor{beamercolorbox}{fg=techGold,bg=techDarkGold}
+
+\setbeamercolor{itemize item}{fg=buzzGold}
+\setbeamercolor{itemize subitem}{fg=navyBlue}
+\setbeamercolor{itemize subsubitem}{fg=grayMatter}
+
+\setbeamercolor{enumerate item}{fg=navyBlue}
+\setbeamercolor{enumerate subitem}{fg=techDarkGold}
+\setbeamercolor{enumerate subsubitem}{fg=grayMatter}
+
+% Other colors
+\setbeamercolor{button}{bg=techDarkGold,fg=navyBlue}
+
+% Filled block colors
+\makeatletter
+\renewcommand{\metropolis@block@fill}{
+    \setbeamercolor{block title}{fg=navyBlue, bg=techDarkGold}
+    \setbeamercolor{block body}{bg=techDarkGold!10!white}
+    }
+\makeatletter
+
+% Bar widths
+\makeatletter
+\setlength{\metropolis@titleseparator@linewidth}{1.2mm} % Width of bar on title slide
+\setlength{\metropolis@progressonsectionpage@linewidth}{1mm} % Width of progress bar on section title slide
+\setlength{\metropolis@progressinheadfoot@linewidth}{1mm} % Width of progress bar on normal slides
+\makeatother
+
+% \usecolortheme{whale}
+\usecolortheme{orchid}
+% \useinnertheme{rounded}
+
+\useoutertheme{infolinesGt}
+
+\newcommand{\framehead}[1]{\frametitle{
+    \begin{minipage}{0.8\textwidth}
+        \begin{flushleft}
+            #1
+        \end{flushleft}
+    \end{minipage}
+    \hfill\includesvg[height=2ex]{icons/GeorgiaTech_TechGold.svg}}}
